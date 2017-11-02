@@ -1,0 +1,13 @@
+<link rel='stylesheet' href='/stylesheets/style.css' />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<div class="container">
+<p>
+ID: <%= user.id %><br/>
+Username: <%= user[0].username %><br/>
+Name: <%= user[0].name %><br/>
+<% if (user[0].email) { %>
+Email: <%= user[0].email %><br/>
+<% } %>
+</p>
+<a href="/logout"><button class="btn btn-md btn-warninig">Log out</button></a>
+</div>
